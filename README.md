@@ -27,13 +27,6 @@ Foi adotado a abordagem monolítica para a aplicação pelos seguintes motivos:
 - A latência é reduzida como também a sobrecarga associada à comunicação entre serviços distribuídos 
 - Mais fácil de gerenciar transições que envolvem múltiplos componentes 
 
-# Objetivos da aplicação
-
-- Cadastrar a empresa que vai precisar do nosso software, podendo ser qualquer tipo de empresa que busque através da IA, o crescimento de sua empresa;
-- A empresa irá se cadastrar e fornecer alguns dados;
-- Depois vamos recolher dados dos clientes que fazem uso do produto ou serviço fornecidos pela empresa que está fazendo uso do software;
-- Esses dados servirão como dataset para utilizarmos as ferramentas da IA e de análise de dados para obtermos resultados que ajudem a empresa ter maior conhecimentos sobre seus consumidores.
-
 # Como rodar a aplicação
 
 - Clonar o projeto do repositório no GitHub
