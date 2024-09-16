@@ -1,3 +1,4 @@
+using System.Reflection;
 using Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -38,7 +39,14 @@ namespace API.IAFUTURE
                         Email = builder.Configuration.GetSection("Swagger:Email").Value,
                         Name = builder.Configuration.GetSection("Swagger:Name").Value
                     }
+
                 });
+
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+
+                
+                swagger.IncludeXmlComments(xmlPath);
             });
 
             builder.Services.AddScoped<IRepository<Conta>, Repository<Conta>>();
