@@ -30,6 +30,7 @@ Foi adotado a abordagem monolítica para a aplicação pelos seguintes motivos:
 # Como rodar a aplicação
 
 - Clonar o projeto do repositório no GitHub
+- Lembrar de alterar as informações do banco de dados no "appsettings.json" de acordo com seus dados
 - Executar o projeto no VS Code ou outra IDE para linguagem C# e projeto API Web Core
 - Ao executar, uma página web do Swagger irá abrir
 - No Swagger, teremos o CRUD de todas as classes 
